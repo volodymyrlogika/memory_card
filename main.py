@@ -56,9 +56,7 @@ def new_question():
     radio_buttons[3].setText(Question.current.wrong_answer3)
 
 
-
 new_question()
-
 
 def check_result():
     radio_group.setExclusive(False)

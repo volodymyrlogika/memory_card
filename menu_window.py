@@ -38,6 +38,12 @@ col2.addWidget(le_wrong3)
 row1.addLayout(col1)
 row1.addLayout(col2)
 
+add_btn = QPushButton("Додати запитання")
+clear_btn = QPushButton("Очистити")
+back_btn = QPushButton("Назад")
+row2.addWidget(add_btn)
+row2.addWidget(clear_btn)
+
 stat_lb = QLabel("Статистика:")
 stat_lb.setStyleSheet('font-size: 19px; font-weight: bold;')
 
@@ -47,9 +53,11 @@ success_lb = QLabel("Успішність: 0%")
 
 vline = QVBoxLayout()
 vline.addLayout(row1)
+vline.addLayout(row2)
 vline.addWidget(stat_lb)
 vline.addWidget(count_ans_lb)
 vline.addWidget(count_right_lb)
 vline.addWidget(success_lb)
+vline.addWidget(back_btn)
 
 menu_win.setLayout(vline)
